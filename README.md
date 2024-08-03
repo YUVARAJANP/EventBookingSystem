@@ -18,7 +18,7 @@ This project is a basic event booking system that allows users to view events, b
 
 1. **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/event-booking-system](https://github.com/YUVARAJANP/EventBookingSystem).git
+    git clone https://github.com/YUVARAJANP/EventBookingSystem.git
     cd event-booking-system
     ```
 
