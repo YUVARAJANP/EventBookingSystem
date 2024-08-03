@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Event Booking System</h1>
+            <nav>
+                <a href="#events">Events</a>
+                <a href="#booking">Book Tickets</a>
+                <a href="#print-ticket">Print Ticket</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="events">
+            <div class="container">
+                <h2>Available Events</h2>
+                <div id="event-list" class="event-list"></div>
+            </div>
+        </section>
+        <section id="booking">
+            <div class="container">
+                <h2>Book Tickets</h2>
+                <form id="booking-form" class="form">
+                    <label for="event-id">Event ID:</label>
+                    <input type="text" id="event-id" required>
+                    <label for="user-id">User ID:</label>
+                    <input type="text" id="user-id" required>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" max="15" required>
+                    <button type="submit">Book Tickets</button>
+                </form>
+            </div>
+        </section>
+        <section id="print-ticket">
+            <div class="container">
+                <h2>Print Ticket</h2>
+                <form id="print-ticket-form" class="form">
+                    <label for="booking-id">Booking ID:</label>
+                    <input type="text" id="booking-id" required>
+                    <button type="submit">Print Ticket</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Event Booking System. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
